@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajasthan Routes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+    }
+    /* ===== Navbar ===== */
+    .navbar {
+      background: linear-gradient(90deg, #ff9900, #ff6600);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .logo {
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar ul li {
+      margin: 0 18px;
+      position: relative;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .navbar ul li a:hover { color: #222; }
+    /* Dropdown */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: #fff;
+      min-width: 200px;
+      top: 40px;
+      left: 0;
+      box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+      border-radius: 6px;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    .dropdown-content a {
+      color: #333;
+      padding: 10px 14px;
+      display: block;
+      text-decoration: none;
+    }
+    .dropdown-content a:hover { background: #f2f2f2; }
+    .navbar ul li:hover .dropdown-content {
+      display: block;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    /* ===== Main ===== */
+    .main {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
+    /* ===== Cards ===== */
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+    .card h3 { color: #e65100; margin-bottom: 10px; }
+    .card p { font-size: 0.9rem; color: #555; margin-bottom: 12px; }
+    /* Places */
+    .place {
+      margin-bottom: 12px;
+      padding: 10px;
+      border-left: 4px solid #ff9800;
+      background: #fff8e1;
+      border-radius: 6px;
+    }
+    .place h4 { margin: 0 0 5px; font-size: 1rem; }
+    .place p { font-size: 0.85rem; margin: 0 0 6px; }
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 5px;
+    }
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 6px;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    table th { background: #ff9800; color: white; }
+    table tr:nth-child(even) { background: #f9f9f9; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">RajasthanRoutes</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Destinations ▾</a>
+        <div class="dropdown-content">
+          <a href="#pushkar">Pushkar</a>
+          <a href="#bikaner">Bikaner</a>
+          <a href="#ranthambore">Ranthambore</a>
+          <a href="#ajmer">Ajmer</a>
+          <a href="#chittorgarh">Chittorgarh</a>
+          <a href="#bundi">Bundi</a>
+          <a href="#bharatpur">Bharatpur</a>
+          <a href="#alwar">Alwar</a>
+          <a href="#kumbhalgarh">Kumbhalgarh</a>
+          <a href="#sariska">Sariska</a>
+          <a href="#nagaur">Nagaur</a>
+          <a href="#mandawa">Mandawa</a>
+          <a href="#shekhawati">Shekhawati</a>
+          <a href="#barmer">Barmer</a>
+          <a href="#dholpur">Dholpur</a>
+          <a href="#tonk">Tonk</a>
+          <a href="#kota">Kota</a>
+          <a href="#jhalawar">Jhalawar</a>
+          <a href="#sikar">Sikar</a>
+          <a href="#pali">Pali</a>
+          <a href="#jhunjhunu">Jhunjhunu</a>
+          <a href="#osian">Osian</a>
+          <a href="#hanumangarh">Hanumangarh</a>
+          <a href="#ganganagar">Ganganagar</a>
+          <a href="#sawaimadhopur">Sawai Madhopur</a>
+        </div>
+      </li>
+      <li><a href="#">Packages</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="main">
+
+    <!-- Pushkar -->
+    <div class="card" id="pushkar">
+      <h3>Pushkar</h3>
+      <p>Holy town famous for Pushkar Lake & Camel Fair.</p>
+      <div class="place">
+        <h4>Pushkar Lake</h4>
+        <p>Route: Ajmer → Pushkar</p>
+        <table>
+          <tr><th>Bus</th><th>Departure</th><th>Arrival</th></tr>
+          <tr><td>PK-101</td><td>08:00</td><td>08:45</td></tr>
+          <tr><td>PK-102</td><td>14:00</td><td>14:45</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Bikaner -->
+    <div class="card" id="bikaner">
+      <h3>Bikaner</h3>
+      <p>Known for Junagarh Fort & Karni Mata Temple.</p>
+      <div class="place">
+        <h4>Junagarh Fort</h4>
+        <p>Route: Bikaner Station → Junagarh Fort</p>
+        <table>
+          <tr><th>Bus</th><th>Departure</th><th>Arrival</th></tr>
+          <tr><td>BK-201</td><td>09:00</td><td>09:30</td></tr>
+          <tr><td>BK-202</td><td>15:00</td><td>15:30</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Ranthambore -->
+    <div class="card" id="ranthambore">
+      <h3>Ranthambore</h3>
+      <p>Popular tiger reserve with thrilling jungle safaris.</p>
+      <div class="place">
+        <h4>Safari Gate</h4>
+        <p>Route: Sawai Madhopur → Ranthambore Park</p>
+        <table>
+          <tr><th>Bus</th><th>Departure</th><th>Arrival</th></tr>
+          <tr><td>RT-301</td><td>06:00</td><td>06:30</td></tr>
+          <tr><td>RT-302</td><td>16:00</td><td>16:30</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Ajmer -->
+    <div class="card" id="ajmer">
+      <h3>Ajmer</h3>
+      <p>Home to Ajmer Sharif Dargah & rich Mughal heritage.</p>
+      <div class="place">
+        <h4>Ajmer Sharif Dargah</h4>
+        <p>Route: Bus Stand → Dargah</p>
+        <table>
+          <tr><th>Bus</th><th>Departure</th><th>Arrival</th></tr>
+          <tr><td>AJ-101</td><td>07:30</td><td>07:50</td></tr>
+          <tr><td>AJ-102</td><td>12:00</td><td>12:20</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Chittorgarh -->
+    <div class="card" id="chittorgarh">
+      <h3>Chittorgarh</h3>
+      <p>Historic city known for its massive Chittorgarh Fort.</p>
+      <div class="place">
+        <h4>Chittorgarh Fort</h4>
+        <p>Route: Bus Stand → Chittorgarh Fort</p>
+        <table>
+          <tr><th>Bus</th><th>Departure</th><th>Arrival</th></tr>
+          <tr><td>CH-201</td><td>09:00</td><td>09:40</td></tr>
+          <tr><td>CH-202</td><td>15:00</td><td>15:40</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Bundi -->
+    <div class="card" id="bundi">
+      <h3>Bundi</h3>
+      <p>Charming town with stepwells & Taragarh Fort.</p>
+      <div class="place">
+        <h4>Taragarh Fort</h4>
+        <p>Route: Bus Stand → Taragarh Fort</p>
+        <table>
+          <tr><th>Bus</th><th>Departure</th><th>Arrival</th></tr>
+          <tr><td>BD-101</td><td>10:00</td><td>10:30</td></tr>
+          <tr><td>BD-102</td><td>14:00</td><td>14:30</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Bharatpur -->
+    <div class="card" id="bharatpur">
+      <h3>Bharatpur</h3>
+      <p>Keoladeo National Park, UNESCO bird sanctuary.</p>
+      <div class="place">
+        <h4>Keoladeo Park</h4>
+        <p>Route: Bharatpur Station → Keoladeo</p>
+        <table>
+          <tr><th>Bus</th><th>Departure</th><th>Arrival</th></tr>
+          <tr><td>BP-201</td><td>07:00</td><td>07:25</td></tr>
+          <tr><td>BP-202</td><td>15:00</td><td>15:25</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Continue same for Alwar, Kumbhalgarh, Sariska, Nagaur, Mandawa, Shekhawati, Barmer, Dholpur, Tonk, Kota, Jhalawar, Sikar, Pali, Jhunjhunu, Osian, Hanumangarh, Ganganagar, Sawai Madhopur -->
+    
+  </section>
+</body>
+</html>
