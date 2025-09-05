@@ -1,0 +1,81 @@
+/* Styling for the Booking Form Page */
+.booking-main {
+    margin-top: 100px;
+    padding: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.booking-main h2 {
+    color: #e65100;
+    margin-bottom: 25px;
+}
+
+.booking-details-card {
+    background: #fff3e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.booking-details-card p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking-form label {
+    font-weight: 600;
+    color: #555;
+    text-align: left;
+}
+
+.booking-form input {
+    padding: 12px 15px;
+    border: 2px solid #e65100;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.booking-form input:focus {
+    outline: none;
+    border-color: #ff9800;
+    box-shadow: 0 0 8px rgba(255, 152, 0, 0.5);
+}
+
+.booking-form button {
+    background: linear-gradient(135deg, #ff9800, #e65100);
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.booking-form button:hover {
+    background: linear-gradient(135deg, #e65100, #ff9800);
+    transform: scale(1.02);
+}
+
+.confirmation-message {
+    padding: 20px;
+    border-radius: 10px;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}

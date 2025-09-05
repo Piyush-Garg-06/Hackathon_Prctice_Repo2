@@ -1,0 +1,86 @@
+/* All of the styles from AllIndiaRouteDetails.css can be reused here */
+/* to maintain consistency across your details pages. */
+.details-main {
+    margin-top: 100px;
+    padding: 40px;
+    text-align: center;
+}
+
+.details-main h2 {
+    color: #e65100;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+}
+
+.details-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.details-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.details-card strong {
+    color: #ff9800;
+}
+
+.stoppages {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.stoppages h4 {
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff9800;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.stoppages ul {
+    list-style-type: none;
+}
+
+.stoppages li {
+    background: #fff3e0;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 5px solid #ff9800;
+}
+
+.loading,
+.not-found {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #888;
+}
+
+.book-now-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff9800;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.book-now-btn:hover {
+    background: #e65100;
+}
+
+.book-btn-container {
+    text-align: center;
+    margin-top: 25px;
+}
